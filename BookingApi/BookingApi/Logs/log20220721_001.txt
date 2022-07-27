@@ -1,0 +1,57 @@
+2022-07-21 21:52:36.029 +04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-07-21 21:52:37.093 +04:00 [INF] Entity Framework Core 6.0.7 initialized 'BookingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-07-21 21:52:37.272 +04:00 [DBG] DetectChanges starting for 'BookingContext'.
+2022-07-21 21:52:37.276 +04:00 [DBG] DetectChanges completed for 'BookingContext'.
+2022-07-21 21:52:37.277 +04:00 [DBG] DetectChanges starting for 'BookingContext'.
+2022-07-21 21:52:37.277 +04:00 [DBG] DetectChanges completed for 'BookingContext'.
+2022-07-21 21:52:37.303 +04:00 [DBG] DetectChanges starting for 'BookingContext'.
+2022-07-21 21:52:37.303 +04:00 [DBG] DetectChanges completed for 'BookingContext'.
+2022-07-21 21:52:37.303 +04:00 [DBG] DetectChanges starting for 'BookingContext'.
+2022-07-21 21:52:37.303 +04:00 [DBG] DetectChanges completed for 'BookingContext'.
+2022-07-21 21:52:37.414 +04:00 [DBG] 'BookingContext' disposed.
+2022-07-21 21:53:09.509 +04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-07-21 21:53:09.634 +04:00 [DBG] Hosting starting
+2022-07-21 21:53:09.654 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-21 21:53:09.659 +04:00 [DBG] Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-74607914-250c-4ef9-92bc-e41fb656f379.xml'.
+2022-07-21 21:53:09.664 +04:00 [DBG] Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-74c0097c-79d0-40fc-a7a6-07ef07a4f70a.xml'.
+2022-07-21 21:53:09.672 +04:00 [DBG] Found key {74607914-250c-4ef9-92bc-e41fb656f379}.
+2022-07-21 21:53:09.677 +04:00 [DBG] Found key {74c0097c-79d0-40fc-a7a6-07ef07a4f70a}.
+2022-07-21 21:53:09.686 +04:00 [DBG] Considering key {74c0097c-79d0-40fc-a7a6-07ef07a4f70a} with expiration date 2022-09-17 09:24:28Z as default key.
+2022-07-21 21:53:09.688 +04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-21 21:53:09.694 +04:00 [DBG] Decrypting secret element using Windows DPAPI.
+2022-07-21 21:53:09.697 +04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-07-21 21:53:09.704 +04:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2022-07-21 21:53:09.711 +04:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2022-07-21 21:53:09.717 +04:00 [DBG] Using key {74c0097c-79d0-40fc-a7a6-07ef07a4f70a} as the default key.
+2022-07-21 21:53:09.719 +04:00 [DBG] Key ring with default key {74c0097c-79d0-40fc-a7a6-07ef07a4f70a} was loaded during application startup.
+2022-07-21 21:53:09.831 +04:00 [DBG] Using development certificate: CN=localhost (Thumbprint: C941459ABC5F4E53AFC6B719D581A1F0B943316D)
+2022-07-21 21:53:09.882 +04:00 [INF] Now listening on: https://localhost:7058
+2022-07-21 21:53:09.884 +04:00 [INF] Now listening on: http://localhost:5058
+2022-07-21 21:53:09.886 +04:00 [DBG] Loaded hosting startup assembly BookingApi
+2022-07-21 21:53:09.887 +04:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-07-21 21:53:09.888 +04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-07-21 21:53:09.890 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-21 21:53:09.892 +04:00 [INF] Hosting environment: Development
+2022-07-21 21:53:09.893 +04:00 [INF] Content root path: C:\Users\user\source\repos\BookingApi\BookingApi\
+2022-07-21 21:53:09.894 +04:00 [DBG] Hosting started
+2022-07-21 21:53:09.980 +04:00 [DBG] Connection id "0HMJB87FUBFBU" accepted.
+2022-07-21 21:53:09.983 +04:00 [DBG] Connection id "0HMJB87FUBFBU" started.
+2022-07-21 21:53:10.025 +04:00 [DBG] Connection id "0HMJB87FUBFBV" accepted.
+2022-07-21 21:53:10.027 +04:00 [DBG] Connection id "0HMJB87FUBFBV" started.
+2022-07-21 21:53:10.043 +04:00 [DBG] Connection 0HMJB87FUBFBU established using the following protocol: "Tls12"
+2022-07-21 21:53:10.043 +04:00 [DBG] Connection 0HMJB87FUBFBV established using the following protocol: "Tls12"
+2022-07-21 21:53:10.107 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/index.html - -
+2022-07-21 21:53:10.147 +04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-07-21 21:53:10.187 +04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-07-21 21:53:10.189 +04:00 [DBG] Request did not match any endpoints
+2022-07-21 21:53:10.286 +04:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-07-21 21:53:10.374 +04:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-07-21 21:53:10.378 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7058/_vs/browserLink - -
+2022-07-21 21:53:10.378 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7058/_framework/aspnetcore-browser-refresh.js - -
+2022-07-21 21:53:10.380 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/index.html - - - 200 - text/html;charset=utf-8 277.6070ms
+2022-07-21 21:53:10.386 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7058/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.9157ms
+2022-07-21 21:53:10.400 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7058/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.6543ms
+2022-07-21 21:53:10.845 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/v1/swagger.json - -
+2022-07-21 21:53:10.847 +04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-07-21 21:53:10.849 +04:00 [DBG] Request did not match any endpoints
+2022-07-21 21:53:10.959 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.2802ms

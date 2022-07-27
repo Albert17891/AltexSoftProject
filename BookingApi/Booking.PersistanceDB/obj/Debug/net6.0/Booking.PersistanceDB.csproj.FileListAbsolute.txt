@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\bin\Debug\net6.0\Booking.PersistanceDB.deps.json
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\bin\Debug\net6.0\Booking.PersistanceDB.runtimeconfig.json
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\bin\Debug\net6.0\Booking.PersistanceDB.dll
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\bin\Debug\net6.0\Booking.PersistanceDB.pdb
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\bin\Debug\net6.0\Booking.Domain.dll
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\bin\Debug\net6.0\Booking.Domain.pdb
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.AssemblyInfo.cs
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.csproj.CopyComplete
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.dll
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\refint\Booking.PersistanceDB.dll
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.pdb
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\Booking.PersistanceDB.genruntimeconfig.cache
+C:\Users\user\source\repos\BookingApi\Booking.PersistanceDB\obj\Debug\net6.0\ref\Booking.PersistanceDB.dll

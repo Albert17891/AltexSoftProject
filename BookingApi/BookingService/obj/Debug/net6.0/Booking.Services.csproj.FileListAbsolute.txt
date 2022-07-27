@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Services.deps.json
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Services.dll
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Services.pdb
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Data.dll
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Domain.dll
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Data.pdb
+C:\Users\user\source\repos\BookingApi\BookingService\bin\Debug\net6.0\Booking.Domain.pdb
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.AssemblyInfo.cs
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.csproj.CopyComplete
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.dll
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\refint\Booking.Services.dll
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\Booking.Services.pdb
+C:\Users\user\source\repos\BookingApi\BookingService\obj\Debug\net6.0\ref\Booking.Services.dll
