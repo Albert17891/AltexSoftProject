@@ -3,7 +3,7 @@ using System.Net;
 
 namespace BookingApi
 {
-    public class ApiError:ProblemDetails
+    public class ApiError : ProblemDetails
     {
         public const string UnhandledError = "UnhandledException";
         private HttpContext _context;

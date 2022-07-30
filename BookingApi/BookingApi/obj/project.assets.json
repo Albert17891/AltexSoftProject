@@ -3445,11 +3445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\BookingApi\\BookingApi\\BookingApi.csproj",
+      "projectUniqueName": "D:\\Albert\\AltexProject\\BookingApi\\BookingApi\\BookingApi.csproj",
       "projectName": "BookingApi",
-      "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\BookingApi\\BookingApi.csproj",
+      "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\BookingApi\\BookingApi.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\BookingApi\\BookingApi\\obj\\",
+      "outputPath": "D:\\Albert\\AltexProject\\BookingApi\\BookingApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3466,14 +3466,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Data.EF\\Booking.DataEF.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Data.EF\\Booking.DataEF.csproj"
+            "D:\\Albert\\AltexProject\\BookingApi\\Booking.Data.EF\\Booking.DataEF.csproj": {
+              "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Data.EF\\Booking.DataEF.csproj"
             },
-            "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj"
+            "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj": {
+              "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj"
             },
-            "C:\\Users\\user\\source\\repos\\BookingApi\\BookingService\\Booking.Services.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\BookingService\\Booking.Services.csproj"
+            "D:\\Albert\\AltexProject\\BookingApi\\BookingService\\Booking.Services.csproj": {
+              "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\BookingService\\Booking.Services.csproj"
             }
           }
         }

@@ -1,12 +1,6 @@
 ﻿using Booking.Data;
 using Booking.Domain.Booking;
-using Mapster;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Booking.DataEF
 {
@@ -16,11 +10,11 @@ namespace Booking.DataEF
 
         public OrderRepository(IBaseRepository<Order> repository)
         {
-            _repository = repository;  
+            _repository = repository;
         }
         public async Task Booking(Order order)
         {
-           await _repository.AddAsync(order);
+            await _repository.AddAsync(order);
         }
 
         public async Task<List<Order>> GetBookings(int customerId)
@@ -31,7 +25,7 @@ namespace Booking.DataEF
 
         public async Task<List<Order>> GetGuests(int hostId)
         {
-          return  await _repository.Table.Where(x => x.HostId == hostId).ToListAsync();
+            return await _repository.Table.Where(x => x.HostId == hostId).ToListAsync();
         }
 
         public async Task UpdateOrder(Guest guest)
@@ -43,8 +37,8 @@ namespace Booking.DataEF
             if (order != null)
             {
                 order.Status = guest.Status;
-              await  _repository.Update(order);
-            }               
+                await _repository.Update(order);
+            }
             else
                 throw new NullReferenceException();
         }

@@ -16,7 +16,7 @@ namespace Booking.PersistanceDB.Configuration
             builder.Property(x => x.City).IsRequired();
             builder.Property(x => x.From).IsRequired();
             builder.Property(x => x.To).IsRequired();
-           
+
         }
     }
 }

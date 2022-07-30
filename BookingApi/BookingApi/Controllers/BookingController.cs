@@ -25,9 +25,18 @@ namespace BookingApi.Controllers
         [HttpGet("{customerId}")]
         public async Task<IActionResult> GetBookings(int customerId)
         {
-            var bookings = await _service.GetAllBooking(customerId);
-            _logger.LogInformation("Get Bookings");
-            return Ok(bookings.Adapt<List<BookingWithApartmentDTO>>());
+            try
+            {
+                var bookings = await _service.GetAllBooking(customerId);
+                _logger.LogInformation("Get Bookings");
+                return Ok(bookings.Adapt<List<BookingWithApartmentDTO>>());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception();
+            }
+           
         }
     }
 }

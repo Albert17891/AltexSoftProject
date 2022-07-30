@@ -25,10 +25,10 @@ namespace BookingApi.Controllers
         }
 
         [EnableCors]
-        [HttpGet] 
-        public async Task<IActionResult> GetApartment(string city,DateTime From,DateTime To)
+        [HttpPost] 
+        public async Task<IActionResult> GetApartment(SearchRequest searchRequest)
         {
-            var apartment =await _service.GetAllApartment(city,From,To);
+            var apartment =await _service.GetAllApartment(searchRequest.City,searchRequest.From,searchRequest.To);
             if (apartment == null)
                 return NotFound();
 
@@ -41,7 +41,7 @@ namespace BookingApi.Controllers
         [Route("Booking")]
         [HttpPost]
         public async Task<IActionResult> Booking(OrderRequest orderRequest)
-        {
+        {                                           
             if (orderRequest == null)
                 return BadRequest();
             await  _service.Booking(orderRequest.Adapt<OrderServiceModel>());

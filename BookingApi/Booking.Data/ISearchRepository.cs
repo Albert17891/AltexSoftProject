@@ -4,7 +4,7 @@ namespace Booking.Data
 {
     public interface ISearchRepository
     {
-        public Task<List<Apartment>> GetApartmentWithCity(string city,DateTime From,DateTime To);
+        public Task<List<Apartment>> GetApartmentWithCity(string city, DateTime From, DateTime To);
 
         public Task AddApartment(Apartment apartment);
 

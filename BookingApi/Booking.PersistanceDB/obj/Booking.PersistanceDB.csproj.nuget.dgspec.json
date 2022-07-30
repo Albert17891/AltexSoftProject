@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj": {}
+    "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\Booking.Domain.csproj": {
+    "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\Booking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\Booking.Domain.csproj",
+        "projectUniqueName": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\Booking.Domain.csproj",
         "projectName": "Booking.Domain",
-        "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\Booking.Domain.csproj",
+        "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\Booking.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\obj\\",
+        "outputPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj": {
+    "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj",
+        "projectUniqueName": "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj",
         "projectName": "Booking.PersistanceDB",
-        "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj",
+        "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\Booking.PersistanceDB.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.PersistanceDB\\obj\\",
+        "outputPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.PersistanceDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\Booking.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\Booking.Domain.csproj"
+              "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\Booking.Domain.csproj": {
+                "projectPath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\Booking.Domain.csproj"
               }
             }
           }

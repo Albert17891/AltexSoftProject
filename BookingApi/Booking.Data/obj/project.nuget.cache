@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hk3yDVgjP+IezKSR1uCdI4S0IhWDby47gqvrSnNGGEYVjG5bQGpOF74vrj1BC+y7/wcZ37G2CpTZLSPsP3pFdQ==",
+  "dgSpecHash": "eEfddCA/PFW3Rvr93hXgt0zQsjH1gSNUjRseSpoZ4d3Wf1+I/kGPf3ZJyVVQQM10KYJZmy5yoaV8IJiezJGKUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Data\\Booking.Data.csproj",
+  "projectFilePath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Data\\Booking.Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

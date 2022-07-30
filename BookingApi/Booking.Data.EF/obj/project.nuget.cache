@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XiXTH3gdr/CtjyRZAQVlq4mZBmuszVQvtdI5KTgKFwwV6Ehdk6M1jMc710/F9+AmIYRwt6MobTVu4ZxSMK78yw==",
+  "dgSpecHash": "PCY5dCmqy7ltGrMQz1ViGXFyxPNfKmN//vpK+3D18ZKfek5f8265CQpd9bhS4GPe/SMKauxz1hsrd+SAKHBVUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Data.EF\\Booking.DataEF.csproj",
+  "projectFilePath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Data.EF\\Booking.DataEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",

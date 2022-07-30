@@ -6,16 +6,16 @@ namespace Booking.DataEF
 {
     public class SearchRepository : ISearchRepository
     {
-       
+
         private readonly IBaseRepository<Apartment> _repository;
 
         public SearchRepository(IBaseRepository<Apartment> repository)
         {
             _repository = repository;
         }
-        public async Task<List<Apartment>> GetApartmentWithCity(string city,DateTime From,DateTime To)
+        public async Task<List<Apartment>> GetApartmentWithCity(string city, DateTime From, DateTime To)
         {
-            var cities= await _repository.Table.Where(x => x.City == city).ToListAsync();
+            var cities = await _repository.Table.Where(x => x.City == city).ToListAsync();
             foreach (var city2 in cities)
             {
                 if (city2.From <= From && city2.To >= To)
@@ -33,7 +33,7 @@ namespace Booking.DataEF
 
         public async Task<Apartment?> GetApartmentWithHostId(int hostId)
         {
-            return await _repository.Table.Where(x=>x.HostId==hostId).SingleOrDefaultAsync();
+            return await _repository.Table.Where(x => x.HostId == hostId).SingleOrDefaultAsync();
         }
     }
 }

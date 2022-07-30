@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "smND8RZ9NUtHhtKo9XP5JMSmLnLOw0ava5QUetmkCYZSor+EQ/qo9Yd8PodzesI1Bs/vmzLHKfVXBXC1JiRnAw==",
+  "dgSpecHash": "+p87Md8GB02F72CaKrrZaXqFmk56G1Dve2npjs2nyWPfiLQFH4rrCWuHz3wHsQwJ4LO3HwpPH8eRMvjUEYdzHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\BookingApi\\Booking.Domain\\Booking.Domain.csproj",
+  "projectFilePath": "D:\\Albert\\AltexProject\\BookingApi\\Booking.Domain\\Booking.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

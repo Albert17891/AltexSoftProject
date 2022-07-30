@@ -1,14 +1,9 @@
 ﻿using Booking.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Booking.DataEF
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T: class
+    public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         private readonly DbContext _context;
         private readonly DbSet<T> _dbSet;
@@ -36,18 +31,18 @@ namespace Booking.DataEF
 
         public async Task<List<T>> GetAll()
         {
-            return await _dbSet.ToListAsync();           
+            return await _dbSet.ToListAsync();
         }
 
         public async Task<T?> GetById(params object[] key)
         {
             return await _dbSet.FindAsync(key);
-          
+
         }
 
-        public async Task  Update(T entity)
+        public async Task Update(T entity)
         {
-             _dbSet.Update(entity);
+            _dbSet.Update(entity);
             await _context.SaveChangesAsync();
         }
 
@@ -56,7 +51,7 @@ namespace Booking.DataEF
             var entity = await GetById(Id);
             if (entity == null)
                 throw new Exception();
-             _dbSet.Update(entity);
+            _dbSet.Update(entity);
         }
     }
 }

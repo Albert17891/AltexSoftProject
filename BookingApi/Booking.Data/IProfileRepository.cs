@@ -7,7 +7,7 @@ namespace Booking.Data
 
         public Task<List<Profile>> GetProfileInfo(int userId);
 
-        public Task AddProfile(Profile profile);
+        public Task UpdateProfile(Profile profile);
 
         public Task<Profile?> GetUser(string email, string password);
 

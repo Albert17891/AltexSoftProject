@@ -1,4 +1,4 @@
-﻿namespace BookingApi.Models.Request
+﻿    namespace BookingApi.Models.Request
 {
     public class ProfileRequest
     {
