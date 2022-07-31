@@ -1,6 +1,7 @@
 using Booking.PersistanceDB.Context;
 using Booking.Services.Models;
 using BookingApi.Infastructure.Extensions;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -42,7 +43,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-       
+
+builder.Services.AddFluentValidation(conf =>
+{
+    conf.RegisterValidatorsFromAssembly(typeof(Program).Assembly);
+    
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

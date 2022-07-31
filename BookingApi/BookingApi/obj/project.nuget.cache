@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8oYsZ4ZSgIFpoIjbXbDxssLmwH4TAAUKXXoJHVJMzzQ04rtb0lNd/0g09r9q3MKabKtK59r73sTLHYn978RqrQ==",
+  "dgSpecHash": "U5aup5MPmL1eEdEv+NEY5R/+RBlMcMpnJbjkEH4NFiULH6sk8S8om1t8fb9zRPQJqOmPH1rrGjY08HV/IA+FJg==",
   "success": true,
   "projectFilePath": "D:\\Albert\\AltexProject\\BookingApi\\BookingApi\\BookingApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",

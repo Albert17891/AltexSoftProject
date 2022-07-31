@@ -57,8 +57,8 @@ namespace BookingApi.Controllers
                 await _service.Booking(orderRequest.Adapt<OrderServiceModel>());
                 return Ok();
             }
-            catch (Exception)
-            {
+            catch (Exception ex)
+            { 
                 _logger.LogError(ex.Message);
                 throw new Exception();
             }
