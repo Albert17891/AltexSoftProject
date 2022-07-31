@@ -56,6 +56,7 @@ namespace Booking.PersistanceDB.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Photo")
+                        .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("To")
@@ -138,7 +139,8 @@ namespace Booking.PersistanceDB.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Photo")
-                        .HasColumnType("nvarchar(max)");
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(max)");
 
                     b.HasKey("UserId");
 

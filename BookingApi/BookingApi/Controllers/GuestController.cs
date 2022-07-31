@@ -15,10 +15,12 @@ namespace BookingApi.Controllers
     public class GuestController : ControllerBase
     {
         private readonly IGuestService _service;
+        private readonly ILogger<GuestController> _logger;
 
-        public GuestController(IGuestService service)
+        public GuestController(IGuestService service,ILogger<GuestController> logger)
         {
             _service = service;
+            _logger = logger;
         }
 
         [EnableCors]
@@ -26,8 +28,17 @@ namespace BookingApi.Controllers
         [HttpGet("{hostId}")]
         public async Task<IActionResult> GetGuest(int hostId)
         {
-            var guests =await _service.GetGuests(hostId);
-            return Ok(guests.Adapt<List<GuestDTO>>());
+            try
+            {
+                var guests = await _service.GetGuests(hostId);
+                return Ok(guests.Adapt<List<GuestDTO>>());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new  Exception();
+            }
+            
         }
 
         [EnableCors]
@@ -35,8 +46,17 @@ namespace BookingApi.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateGuest(GuestDTO guest)
         {
-            await _service.UpdateGuest(guest.Adapt<GuestServiceModel>()) ;                       
-            return Ok();  
+            try
+            {
+                await _service.UpdateGuest(guest.Adapt<GuestServiceModel>());
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception();
+            }
+            
         }
 
        

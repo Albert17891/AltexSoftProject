@@ -15,10 +15,12 @@ namespace BookingApi.Controllers
     public class ProfileController : ControllerBase
     {
         private readonly IProfileService _service;
+        private readonly ILogger<ProfileController> _logger;
 
-        public ProfileController(IProfileService service)
+        public ProfileController(IProfileService service,ILogger<ProfileController> logger)
         {
             _service = service;
+            _logger = logger;
         }
 
         [EnableCors]
@@ -35,10 +37,19 @@ namespace BookingApi.Controllers
         [HttpPost]
         public async Task<IActionResult> AddApartment(ApartmentRequest apartment)
         {
-            if (apartment == null)
-                return BadRequest();
-            await _service.AddApartment(apartment.Adapt<ApartmentServiceModel>());
-            return Ok();
+            try
+            {
+                if (apartment == null)
+                    return BadRequest();
+                await _service.AddApartment(apartment.Adapt<ApartmentServiceModel>());
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception();
+            }
+           
         }
 
         [EnableCors]
@@ -46,10 +57,19 @@ namespace BookingApi.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateUser(ProfileRequest profile)
         {
-            if (profile == null)
-                return BadRequest();
-            await _service.UpdateProfile(profile.Adapt<ProfileServiceModel>());
-            return Ok();
+            try
+            {
+                if (profile == null)
+                    return BadRequest();
+                await _service.UpdateProfile(profile.Adapt<ProfileServiceModel>());
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception();
+            }
+            
         }
     }
 }

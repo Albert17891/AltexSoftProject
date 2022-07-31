@@ -59,7 +59,7 @@ namespace Booking.Services.Implementations
 
         public async Task UpdateProfile(ProfileServiceModel profile)
         {
-            await _repository.AddProfile(profile.Adapt<Profile>());
+            await _repository.UpdateProfile(profile.Adapt<Profile>());
         }
 
         public async Task RegisterUser(ProfileServiceModel user)

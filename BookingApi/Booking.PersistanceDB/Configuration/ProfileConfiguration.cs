@@ -13,6 +13,7 @@ namespace Booking.PersistanceDB.Configuration
             builder.Property(x => x.FirstName).IsRequired();
             builder.Property(x => x.LastName).IsRequired();
             builder.Property(x => x.Password).IsRequired();
+            builder.Property(x => x.Photo).IsUnicode(false);
             builder.HasOne<Apartment>(x => x.Apartment).WithOne(x => x.Profile).HasForeignKey<Apartment>(x => x.HostId);
             builder.HasMany<Order>(x => x.Order).WithOne(x => x.Profile)
                 .HasForeignKey(x => x.HostId);

@@ -28,7 +28,8 @@ namespace BookingApi.Controllers
             try
             {
                 var bookings = await _service.GetAllBooking(customerId);
-                _logger.LogInformation("Get Bookings");
+               
+
                 return Ok(bookings.Adapt<List<BookingWithApartmentDTO>>());
             }
             catch (Exception ex)

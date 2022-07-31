@@ -28,12 +28,20 @@ namespace BookingApi.Controllers
         [HttpPost] 
         public async Task<IActionResult> GetApartment(SearchRequest searchRequest)
         {
-            var apartment =await _service.GetAllApartment(searchRequest.City,searchRequest.From,searchRequest.To);
-            if (apartment == null)
-                return NotFound();
+            try
+            {
+                if (searchRequest == null)
+                    return BadRequest();
 
-            _logger.LogInformation("Gets Apartment");
-            return Ok(apartment.Adapt<List<ApartmentDTO>>());
+                var apartment = await _service.GetAllApartment(searchRequest.City, searchRequest.From, searchRequest.To);
+                return Ok(apartment.Adapt<List<ApartmentDTO>>());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception();
+            }
+            
 
         }
 
@@ -41,11 +49,20 @@ namespace BookingApi.Controllers
         [Route("Booking")]
         [HttpPost]
         public async Task<IActionResult> Booking(OrderRequest orderRequest)
-        {                                           
-            if (orderRequest == null)
-                return BadRequest();
-            await  _service.Booking(orderRequest.Adapt<OrderServiceModel>());
-            return Ok();
+        {
+            try
+            {
+                if (orderRequest == null)
+                    return BadRequest();
+                await _service.Booking(orderRequest.Adapt<OrderServiceModel>());
+                return Ok();
+            }
+            catch (Exception)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception();
+            }
+          
         }
     }
 }
