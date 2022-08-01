@@ -1,6 +1,8 @@
 ﻿using Booking.Data;
 using Booking.Domain.Booking;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Booking.DataEF
 {
@@ -8,6 +10,7 @@ namespace Booking.DataEF
     {
         private IBaseRepository<Profile> _repository;
 
+        const string SECRET_KEY = "mySecret";
         public ProfileRepository(IBaseRepository<Profile> repository)
         {
             _repository = repository;
@@ -33,6 +36,10 @@ namespace Booking.DataEF
 
         public async Task AddUser(Profile user)
         {
+            var password = HashPassword(user.Password+SECRET_KEY);
+
+            user.Password = password;
+
             await _repository.AddAsync(user);
         }
 
@@ -43,10 +50,29 @@ namespace Booking.DataEF
                 .Include(x => x.Order).SingleOrDefaultAsync();
             return profile;
         }
-                                                                                                                          
+
         public async Task<Profile?> GetUser(string email, string password)
         {
-            return await _repository.Table.SingleOrDefaultAsync(x => x.Email == email && x.Password == password);
+            var hashPassword = HashPassword(password+SECRET_KEY);
+            return await _repository.Table.SingleOrDefaultAsync(x => x.Email == email && x.Password == hashPassword);
+        }
+
+        private string HashPassword(string password)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] bytes = Encoding.ASCII.GetBytes(password);
+                byte[] hashBytes = md5.ComputeHash(bytes);
+
+                StringBuilder sb = new StringBuilder();
+
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
         }
     }
 }

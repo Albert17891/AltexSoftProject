@@ -26,20 +26,12 @@ namespace BookingApi.Controllers
         [Route("Login")]
         [HttpPost]
         public async Task<IActionResult> Login(AccountLoginRequest loginRequest)
-        {
-            try
-            {
+        {           
                 var userIdWithToken = await _service.AuthenticateUser(loginRequest.Email, loginRequest.Password);
                 if (userIdWithToken == null)
                     return BadRequest("Account with this Email or Password does not exist");
 
-                return Ok(userIdWithToken);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                throw new Exception();
-            }
+                return Ok(userIdWithToken);         
            
         }
 

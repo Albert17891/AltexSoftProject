@@ -69,7 +69,7 @@ namespace Booking.Services.Implementations
         {
             var user = await _repository.GetUser(email, password);
             if (user == null)
-                throw new Exception();
+                throw new ObjectNotFoundException("Cannot Find User");
             var token = _jwtService.GenerateSecurityToken(user.Email);
             UserIdWithTokenSerModel userIdWithToken = new UserIdWithTokenSerModel() { UserId = user.UserId, Token = token };
             return userIdWithToken;

@@ -18,7 +18,7 @@ namespace Booking.DataEF
             var cities = await _repository.Table.Where(x => x.City == city).ToListAsync();
             foreach (var city2 in cities)
             {
-                if (city2.From <= From && city2.To >= To)
+                if (city2.From.Date <= From.Date && city2.To.Date >= To.Date)
                     city2.IsAvailable = true;
                 else
                     city2.IsAvailable = false;
