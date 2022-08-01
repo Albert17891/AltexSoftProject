@@ -1,6 +1,7 @@
 using Booking.PersistanceDB.Context;
 using Booking.Services.Models;
 using BookingApi.Infastructure.Extensions;
+using BookingApi.Infastructure.MyMiddlewares;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Serilog;

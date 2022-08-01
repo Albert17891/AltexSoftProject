@@ -10,7 +10,7 @@ namespace Booking.Services.Abstractions
 {
     public interface IProfileService
     {
-        public Task<List<ProfileServiceModel>> GetProfileInfo(int userId);
+        public Task<ProfileServiceModel> GetProfileInfo(int userId);
         public Task AddApartment(ApartmentServiceModel apartment);      
         public Task UpdateProfile(ProfileServiceModel profile);
 

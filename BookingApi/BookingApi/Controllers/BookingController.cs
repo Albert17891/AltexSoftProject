@@ -22,22 +22,15 @@ namespace BookingApi.Controllers
         }
 
         [EnableCors]
+
         [HttpGet("{customerId}")]
         public async Task<IActionResult> GetBookings(int customerId)
         {
-            try
-            {
-                var bookings = await _service.GetAllBooking(customerId);
-               
 
-                return Ok(bookings.Adapt<List<BookingWithApartmentDTO>>());
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                throw new Exception();
-            }
-           
+            var bookings = await _service.GetAllBooking(customerId);
+
+            _logger.LogInformation("GetBookings successfully");
+            return Ok(bookings.Adapt<List<BookingWithApartmentDTO>>());
         }
     }
 }

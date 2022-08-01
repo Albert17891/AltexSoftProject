@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Booking.Services.Exceptions;
+using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
 namespace BookingApi
@@ -37,8 +38,16 @@ namespace BookingApi
             Instance = context.Request.Path;
             Status = Status = (int)HttpStatusCode.InternalServerError;
 
-            //HandleException((dynamic)exception);
+            HandleException((dynamic)exception);
         }
 
+        private void HandleException(ObjectNotFoundException exception)
+        {
+            Code = exception.Code;
+            Status = (int)HttpStatusCode.NotFound;
+            Type = "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4";
+            Title = exception.Message;
+            LogLevel = LogLevel.Trace;
+        }
     }
 }

@@ -4,7 +4,6 @@ using BookingApi.Models.DTO;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingApi.Controllers
@@ -17,7 +16,7 @@ namespace BookingApi.Controllers
         private readonly IGuestService _service;
         private readonly ILogger<GuestController> _logger;
 
-        public GuestController(IGuestService service,ILogger<GuestController> logger)
+        public GuestController(IGuestService service, ILogger<GuestController> logger)
         {
             _service = service;
             _logger = logger;
@@ -28,17 +27,8 @@ namespace BookingApi.Controllers
         [HttpGet("{hostId}")]
         public async Task<IActionResult> GetGuest(int hostId)
         {
-            try
-            {
-                var guests = await _service.GetGuests(hostId);
-                return Ok(guests.Adapt<List<GuestDTO>>());
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                throw new  Exception();
-            }
-            
+            var guests = await _service.GetGuests(hostId);
+            return Ok(guests.Adapt<List<GuestDTO>>());
         }
 
         [EnableCors]
@@ -46,20 +36,14 @@ namespace BookingApi.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateGuest(GuestDTO guest)
         {
-            try
-            {
-                await _service.UpdateGuest(guest.Adapt<GuestServiceModel>());
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                throw new Exception();
-            }
-            
+            if (guest == null)
+                return BadRequest();
+
+            await _service.UpdateGuest(guest.Adapt<GuestServiceModel>());
+            _logger.LogInformation("Update Guest successfully");
+            return Ok();
         }
 
-       
+
     }
 }
-              

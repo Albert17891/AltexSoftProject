@@ -36,11 +36,11 @@ namespace Booking.DataEF
             await _repository.AddAsync(user);
         }
 
-        public async Task<List<Profile>> GetProfileInfo(int userId)
+        public async Task<Profile> GetProfileInfo(int userId)
         {
             var profile = await _repository.Table.Where(x => x.UserId == userId)
                 .Include(x => x.Apartment)
-                .Include(x => x.Order).ToListAsync();
+                .Include(x => x.Order).SingleOrDefaultAsync();
             return profile;
         }
                                                                                                                           

@@ -51,6 +51,11 @@ namespace Booking.Services.Implementations
                 };
             }
 
+            if (bookingModel == null)
+            {
+                bookingModel = new List<BookingWithApartment>();
+            }
+
             return  bookingModel;
                  
         }
