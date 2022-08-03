@@ -1,7 +1,6 @@
 ﻿using Booking.Data;
 using Booking.Services.Abstractions;
 using Booking.Services.Models;
-using Mapster;
 
 namespace Booking.Services.Implementations
 {
@@ -10,7 +9,7 @@ namespace Booking.Services.Implementations
         private readonly IOrderRepository _repository;
         private readonly ISearchRepository _searchRepository;
 
-        public BookingService(IOrderRepository repository,ISearchRepository searchRepository)
+        public BookingService(IOrderRepository repository, ISearchRepository searchRepository)
         {
             _repository = repository;
             _searchRepository = searchRepository;
@@ -20,44 +19,41 @@ namespace Booking.Services.Implementations
             var bookings = await _repository.GetBookings(customerId);
 
             ApartmentServiceModel model = null;
-            List<BookingWithApartment> bookingModel = null;
+            BookingWithApartment bookingModel = null;
+
+            List<BookingWithApartment> booking = new List<BookingWithApartment>();
 
             foreach (var item in bookings)
             {
                 var apartment = await _searchRepository.GetApartmentWithHostId(item.HostId);
                 model = new ApartmentServiceModel()
                 {
-                    
-                        City=apartment.City,
-                        Address=apartment.Address,
-                        NumbOfBeds=apartment.NumbOfBeds,
-                        Photo=apartment.Photo,
-                        DistanceToCenter=apartment.DistanceToCenter,
-                        Description=apartment.Description,
-                        From=apartment.From,
-                        To=apartment.To
-                    
+
+                    City = apartment.City,
+                    Address = apartment.Address,
+                    NumbOfBeds = apartment.NumbOfBeds,
+                    Photo = apartment.Photo,
+                    DistanceToCenter = apartment.DistanceToCenter,
+                    Description = apartment.Description,
+                    From = apartment.From,
+                    To = apartment.To
+
                 };
 
-                bookingModel = new List<BookingWithApartment>()
+
+                bookingModel = new BookingWithApartment()
                 {
-                   new BookingWithApartment()
-                   {
-                       From=item.From,
-                       To=item.To,
-                       Status=item.Status,
-                       Apartment=model
-                   }
+                    From = item.From,
+                    To = item.To,
+                    Status = item.Status,
+                    Apartment = model
                 };
+
+                booking.Add(bookingModel);
             }
 
-            if (bookingModel == null)
-            {
-                bookingModel = new List<BookingWithApartment>();
-            }
+            return booking;
 
-            return  bookingModel;
-                 
         }
     }
 }
