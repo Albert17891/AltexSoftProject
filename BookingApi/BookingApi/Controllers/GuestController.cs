@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingApi.Controllers
-{
+{   
     [Authorize]
     [Route("[controller]")]
     [ApiController]

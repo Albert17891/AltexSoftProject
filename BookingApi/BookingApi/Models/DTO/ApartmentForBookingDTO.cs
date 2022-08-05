@@ -2,6 +2,7 @@
 {
     public class ApartmentForBookingDTO
     {
+        public int HostId { get; set; }
         public string? City { get; set; }
         public string? Address { get; set; }
         public int NumbOfBeds { get; set; }

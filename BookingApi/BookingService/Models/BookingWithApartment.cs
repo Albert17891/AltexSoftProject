@@ -8,6 +8,7 @@ namespace Booking.Services.Models
 {
     public class BookingWithApartment
     {
+        public int CustomerId { get; set; }
         public DateTime From { get; set; }
         public DateTime To { get; set; }
         public int? Status { get; set; }

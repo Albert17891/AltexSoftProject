@@ -28,7 +28,7 @@ namespace Booking.Services.Implementations
                 var apartment = await _searchRepository.GetApartmentWithHostId(item.HostId);
                 model = new ApartmentServiceModel()
                 {
-
+                    HostId=apartment.HostId,
                     City = apartment.City,
                     Address = apartment.Address,
                     NumbOfBeds = apartment.NumbOfBeds,
@@ -43,6 +43,7 @@ namespace Booking.Services.Implementations
 
                 bookingModel = new BookingWithApartment()
                 {
+                    CustomerId=item.CustomerId,
                     From = item.From,
                     To = item.To,
                     Status = item.Status,
